@@ -3,8 +3,7 @@ if has('termguicolors')
   set termguicolors
 endif
 
-set background=dark
-colorscheme desert 
+colorscheme evening 
 syntax on
 
 " --- Basic Behavior ---
