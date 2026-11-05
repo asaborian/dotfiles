@@ -1,6 +1,10 @@
 " --- Color & Theme ---
-set termguicolors
-colorscheme ron
+if has('termguicolors')
+  set termguicolors
+endif
+
+set background=dark
+colorscheme desert 
 syntax on
 
 " --- Basic Behavior ---
@@ -21,9 +25,9 @@ set incsearch
 " --- UI & View ---
 set showcmd
 set scrolloff=5
+set cursorline
 
 " --- Keymaps ---
-" ESC2回押しで検索ハイライトを消す
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
 " --- System Integration ---
